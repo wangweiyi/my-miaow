@@ -1,9 +1,7 @@
-// require(['./test.js'], function(style) {
-// });
-// 
-require('./test.js');
 module.exports = function() {
-	console.log('index');
-	console.log();
+	/* inline './test.js' */
+
+	var sayHi = require('./sayHi.js');
 	
+	console.log('./avatar.jpg#inline');
 }
