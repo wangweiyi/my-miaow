@@ -1,6 +1,7 @@
 var path = require('path');
 
-var amdParse = require('miaow-amd-parse');
+// var amdParse = require('miaow-amd-parse');
+var amdParse = require('./lib/tasks/amd-parse');
 var babelParse = require('miaow-babel-parse');
 var ftlParse = require('miaow-ftl-parse');
 var inlineParse = require('./lib/tasks/inline-parse');
@@ -82,7 +83,7 @@ var config = {
 	hashConcat: '.',
 
 	// 域名
-	domain: '',
+	domain: 'http://127.0.0.1/static/',
 
 	// 调试模式
 	debug: true,

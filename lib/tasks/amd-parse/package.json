@@ -1,0 +1,96 @@
+{
+  "_args": [
+    [
+      "miaow-amd-parse@~4.6.0",
+      "D:\\my\\my-miaow\\node_modules\\miaow-development-config"
+    ]
+  ],
+  "_from": "miaow-amd-parse@>=4.6.0 <4.7.0",
+  "_id": "miaow-amd-parse@4.6.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/miaow-amd-parse",
+  "_nodeVersion": "4.4.7",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/miaow-amd-parse-4.6.0.tgz_1471851506201_0.6722297214437276"
+  },
+  "_npmUser": {
+    "email": "anhulife@gmail.com",
+    "name": "anhulife"
+  },
+  "_npmVersion": "2.15.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "miaow-amd-parse",
+    "raw": "miaow-amd-parse@~4.6.0",
+    "rawSpec": "~4.6.0",
+    "scope": null,
+    "spec": ">=4.6.0 <4.7.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/miaow-development-config"
+  ],
+  "_resolved": "https://registry.npmjs.org/miaow-amd-parse/-/miaow-amd-parse-4.6.0.tgz",
+  "_shasum": "fc44e19e886a0de240577d83023467a5d1d14664",
+  "_shrinkwrap": null,
+  "_spec": "miaow-amd-parse@~4.6.0",
+  "_where": "D:\\my\\my-miaow\\node_modules\\miaow-development-config",
+  "author": {
+    "email": "anhulife@gmail.com",
+    "name": "anhulife"
+  },
+  "bugs": {
+    "url": "https://github.com/miaowjs/miaow-amd-parse/issues"
+  },
+  "dependencies": {
+    "async": "1.4.2",
+    "is-url-superb": "2.0.0",
+    "lodash": "3.10.1",
+    "path-is-absolute": "1.0.0",
+    "postcss": "^5.1.2",
+    "postcss-modules": "^0.5.0",
+    "recast": "0.10.43"
+  },
+  "description": "Miaow的AMD解析器, 可以补全模块名称和依赖的模块名称, 也可以将CSS和JSON转换成AMD模块. 依赖路径遵循喵呜的寻路规则",
+  "devDependencies": {
+    "eslint": "^1.7.2",
+    "eslint-config-airbnb": "^0.1.0",
+    "miaow": "^5.2.0",
+    "mocha": "^2.3.3"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "fc44e19e886a0de240577d83023467a5d1d14664",
+    "tarball": "https://registry.npmjs.org/miaow-amd-parse/-/miaow-amd-parse-4.6.0.tgz"
+  },
+  "engines": {
+    "node": ">=4.0"
+  },
+  "gitHead": "b2e3ed48b241b2cce318c4f347df13d6e4f6b9d9",
+  "homepage": "https://github.com/miaowjs/miaow-amd-parse#readme",
+  "keywords": [
+    "miaow",
+    "amd"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "email": "anhulife@gmail.com",
+      "name": "anhulife"
+    }
+  ],
+  "name": "miaow-amd-parse",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miaowjs/miaow-amd-parse.git"
+  },
+  "scripts": {
+    "postpublish": "cnpm sync miaow-amd-parse",
+    "test": "mocha"
+  },
+  "version": "4.6.0"
+}
