@@ -8,7 +8,7 @@ var inlineParse = require('./lib/tasks/inline-parse');
 var lessParse = require('miaow-less-parse');
 var liveReload = require('miaow-livereload');
 var replace = require('miaow-replace');
-var urlParse = require('miaow-url-parse');
+var urlParse = require('./lib/tasks/url-parse');
 var vueParse = require('miaow-vue-parse');
 
 var ThirdPartyPlugin = require('miaow-thirdparty-plugin');
@@ -76,23 +76,24 @@ var config = {
 		'**/webpack.config.js'
 	],
 
-	// 不追加hash
-	hashLength: 0,
+	// hash长度
+	hashLength: 5,
 
 	// hash值连接符
 	hashConcat: '.',
 
-	// 域名
+	// 静态资源域名
 	domain: 'http://127.0.0.1/static/',
 
 	// 调试模式
-	debug: true,
+	debug: false,
 
 	plugins: [
 		new ThirdPartyPlugin({test: '*.+(js|es6)', tasks: []}),
 		new PackPlugin()
 	],
 
+	// 模块任务
 	modules: [
 		{
 			test: '*.ftl.js',
@@ -213,6 +214,7 @@ var config = {
 		}
 	],
 
+	// 模块寻路路径
 	resolve: {
 		moduleDirectory: ['common', '.remote', 'bower_components'],
 		extensions: ['.js', '.es6'],

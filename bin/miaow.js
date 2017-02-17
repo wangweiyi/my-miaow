@@ -47,6 +47,13 @@ if (argv._[1]) {
 	options.output = path.resolve(process.cwd(), argv._[1]);
 }
 
+var arr = _.map([], function(item) {
+	return '11'
+});
+var arr2 = _.flatten([[{a:1}], [], [{b:2}]]);
+console.log(arr2)
+return;
+
 // 执行编译
 require('..')(options, complete);
 
